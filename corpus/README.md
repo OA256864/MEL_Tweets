@@ -1,0 +1,25 @@
+# Download
+
+All the following material is released under the [licence CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+mel_dataset.tar.bz2 available [here](https://drive.google.com/open?id=1kkRpVJpo-U6Gt_r4Ly-ciq4pAY03CoTg)
+ambiguousUsers.db.gz available [here](https://drive.google.com/open?id=1qYGTUJlkzyFbSTeGP-g1PVefkq8VgUwA)
+
+In practice, you can run:
+```
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qYGTUJlkzyFbSTeGP-g1PVefkq8VgUwA' -O ambiguousUsers.db.gz
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1kkRpVJpo-U6Gt_r4Ly-ciq4pAY03CoTg' -O mel_dataset.tar.bz2
+```
+
+# md5sum
+
+md5sum of uncompressed files:
+```
+afbd9692d98eeffeb4e4008ae3c02a39  mel_dev_ids
+8e5036b5c337a6cf0461d3f478858d2c  mel_test_ids
+475fec98ad3e26c2798c217136466cd9  mel_train_ids
+6ed8a18f479d03932587d07485f6a5e2  kb
+
+8a8d1f8b6676992915da4f33b7b8db52  ambiguousUsers.db
+```
+
