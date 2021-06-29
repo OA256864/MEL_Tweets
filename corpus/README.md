@@ -10,6 +10,16 @@ In practice, you can run:
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qYGTUJlkzyFbSTeGP-g1PVefkq8VgUwA' -O ambiguousUsers.db.gz
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1kkRpVJpo-U6Gt_r4Ly-ciq4pAY03CoTg' -O mel_dataset.tar.bz2
 ```
+Then modify the script `get_original_corpus.py` to process all the tweet as wanted. The current script only display the full text of the tweets and the images URL (and skip non existing tweets).
+```
+conda create --name mael python=3.8
+conda activate mael
+pip install tweepy
+
+tar xjf mel_dataset.tar.bz2
+python get_original_corpus.py
+```
+Finaly, let download the images from their URLs.
 
 # md5sum
 
