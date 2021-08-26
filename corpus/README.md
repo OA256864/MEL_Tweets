@@ -17,7 +17,7 @@ sqlite> .output mapSreenNameToMention.txt
 sqlite> select ('@'||userScreenName),userSearchQueryLasttName from twitterUsers;
 ```
 
-Then modify the script `get_original_corpus.py` to process all the tweet as wanted. The current script only display the full text of the tweets (raw and with modified sceennames with ambiguous mentions) and the images URL (and skip non existing tweets).
+Then modify the script `get_original_corpus.py` to process all the tweets as wanted. The current script only displays the full text of the tweets (raw and with modified screennames with ambiguous mentions) and the images URL (and skips non existing tweets).
 ```
 conda create --name mael python=3.8
 conda activate mael
