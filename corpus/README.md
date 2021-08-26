@@ -1,4 +1,4 @@
-# Download
+# Download and create dataset
 
 All the following material is released under the [licence CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
@@ -10,7 +10,14 @@ In practice, you can run:
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qYGTUJlkzyFbSTeGP-g1PVefkq8VgUwA' -O ambiguousUsers.db.gz
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1kkRpVJpo-U6Gt_r4Ly-ciq4pAY03CoTg' -O mel_dataset.tar.bz2
 ```
-Then modify the script `get_original_corpus.py` to process all the tweet as wanted. The current script only display the full text of the tweets and the images URL (and skip non existing tweets).
+
+Let `gunzip ambiguousUsers.db.gz` then  create the screennames/mention mapping file with `sqlite3 ambiguousUsers.db` and:
+```
+sqlite> .output mapSreenNameToMention.txt
+sqlite> select ('@'||userScreenName),userSearchQueryLasttName from twitterUsers;
+```
+
+Then modify the script `get_original_corpus.py` to process all the tweet as wanted. The current script only display the full text of the tweets (raw and with modified sceennames with ambiguous mentions) and the images URL (and skip non existing tweets).
 ```
 conda create --name mael python=3.8
 conda activate mael
