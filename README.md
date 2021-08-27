@@ -18,7 +18,7 @@ conda install configparser
 
 ### Released Corpus
 The corpus is available at [this address](https://drive.google.com/open?id=1kkRpVJpo-U6Gt_r4Ly-ciq4pAY03CoTg) under the licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
-We provide the identifiers of the tweets that were used in [1,2]. Due to the Twitter policy we do not release the full (*hydratated*) content : see [here](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases) at *Redistribution of Twitter content*. We also provide a program to retrieve a Tweet content from its ID and convert it to the appropriate format. All the material is in the folder `corpus`:
+We provide the identifiers of the tweets that were used in [1,2]. Due to the Twitter policy we do not release the full (*hydratated*) content : see [here](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases) at *Redistribution of Twitter content*. We also provide programs to retrieve the Tweet contents from its ID and recreate the dataset for evaluation. All the material is in the folder `corpus` (see the [README](corpus/README.md)):
 - `mel_train_ids` 35,976 ids of the training evaluation corpus 
 - `mel_dev_ids` 16,599 ids of the dev evaluation corpus 
 - `mel_test_ids` 36,521 ids of the test evaluation corpus 
